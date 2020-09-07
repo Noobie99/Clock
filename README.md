@@ -23,4 +23,5 @@ If you are not on Linux or want to use another compiler, you have to edit the ma
 
 
 # Usage
-Close Clock with "Ctrl + l".
+If you are on Linux you can run it with a compositor (e.g. picom) optionally for transparency.
+Close the Clock with "Ctrl + l".
