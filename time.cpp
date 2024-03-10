@@ -18,9 +18,9 @@ std::string getTime() {
     s += formatString(now->tm_min) + ":";
     s += formatString(now->tm_sec) + "\n";
 
-    std::string days[7] = {"Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"};
+    std::string days[7] = {"Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"};
     std::string months[12] = {"January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"};
-    s += days[now->tm_wday-1] + ", ";
+    s += days[now->tm_wday] + ", ";
     s += months[now->tm_mon] + " ";
 
     s += std::to_string(now->tm_mday);
